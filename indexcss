@@ -1,47 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome - Clinical Engineering Blog</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
-</head>
-<body>
-    <header class="hero-section">
-        <div class="hero-content">
-            <h1 class="hero-title">Your Name</h1>
-            <p class="hero-subtitle">Dedicated Clinical Engineer | Passionate about Healthcare Innovation</p>
-            <nav class="hero-nav">
-                <a href="#aim" class="nav-link">Aim</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="blog.html" class="nav-button">Go to Blog</a>
-            </nav>
-        </div>
-    </header>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <main>
-        <section id="aim" class="section">
-            <div class="container">
-                <h2 class="section-title">My Aim</h2>
-                <p class="section-description">To share insights and experiences in Clinical Engineering, focusing on the latest technologies, best practices, and innovations shaping healthcare.</p>
-            </div>
-        </section>
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
 
-        <section id="contact" class="section contact-section">
-            <div class="container">
-                <h2 class="section-title">Contact Me</h2>
-                <p class="section-description">Email: your-email@example.com</p>
-                <p class="section-description">Phone: +44 123 456 789</p>
-                <p class="section-description">LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
-            </div>
-        </section>
-    </main>
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to bottom, #000000d9, #1a1a1a), url('your-image-path.jpg') center/cover no-repeat;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Clinical Engineering Blog | Designed by Your Name</p>
-        </div>
-    </footer>
-</body>
-</html>
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.hero-nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.nav-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #ff4c4c;
+}
+
+/* Section */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.contact-section {
+    background-color: #fff;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
