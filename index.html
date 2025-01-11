@@ -3,41 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome - Clinical Engineering Blog</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Clinical Engineering Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="text-content">
-                <h1>Your Name</h1>
-                <p class="subtitle">Dedicated Clinical Engineer | Passionate about healthcare innovation</p>
-                <nav>
-                    <a href="#aim" class="nav-link">Aim</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <a href="blog.html" class="btn">Go to Blog</a>
-                </nav>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div>
+            <h1 class="hero-title">Clinical Engineering Blogs</h1>
+            <p class="hero-subtitle">Welcome to your hub for all things Clinical Engineering!</p>
+            <p class="hero-description">
+                This page is your gateway to understanding the exciting and ever-evolving field of clinical engineering. Here, you'll discover:
+                <ul>
+                    <li>What Clinical Engineering is: Delve into the core principles of this dynamic field, explaining how engineering principles are applied to improve healthcare delivery.</li>
+                    <li>Career Pathways: Explore the diverse career options available to clinical engineers, from maintaining vital medical equipment to developing cutting-edge technologies.</li>
+                    <li>Real-World Projects: Gain insights into exciting projects that clinical engineers undertake, including work in areas like robotics, AI, and regenerative medicine.</li>
+                    <li>Latest Innovations: Stay up-to-date on advancements in medical technology, from wearable devices and telemedicine to personalized medicine.</li>
+                </ul>
+            </p>
+        </div>
+    </header>
+
+    <!-- Blog Post Grid -->
+    <main class="blog-grid">
+        <!-- Example Blog Post 1 -->
+        <div class="blog-post">
+            <img src="blog-image1.jpg" alt="Blog Post 1">
+            <div class="blog-post-content">
+                <h3 class="blog-post-title">Introduction to Clinical Engineering</h3>
+                <p class="blog-post-excerpt">Learn the basics of clinical engineering and its role in modern healthcare.</p>
+                <a href="post1.html" class="read-more">Read More</a>
             </div>
-            <div class="image-content">
-                <img src="C:\Users\olgadeth\OneDrive - Nottingham Trent University\Pictures\Screenshots\Screenshot 2025-01-11 194827.png" 
-                     alt="Your Photo" class="profile-image">
+        </div>
+
+        <!-- Example Blog Post 2 -->
+        <div class="blog-post">
+            <img src="blog-image2.jpg" alt="Blog Post 2">
+            <div class="blog-post-content">
+                <h3 class="blog-post-title">Career Pathways in Clinical Engineering</h3>
+                <p class="blog-post-excerpt">Explore the exciting career opportunities in the field of clinical engineering.</p>
+                <a href="post2.html" class="read-more">Read More</a>
             </div>
-        </header>
-        <main>
-            <section id="aim" class="section">
-                <h2>My Aim</h2>
-                <p>To share insights and experiences in Clinical Engineering, focusing on the latest technologies, best practices, and innovations shaping healthcare.</p>
-            </section>
-            <section id="contact" class="section">
-                <h2>Contact Me</h2>
-                <p>Email: your-email@example.com</p>
-                <p>Phone: +44 123 456 789</p>
-                <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2025 Clinical Engineering Blog | Designed by Your Name</p>
-        </footer>
+        </div>
+
+        <!-- Example Blog Post 3 -->
+        <div class="blog-post">
+            <img src="blog-image3.jpg" alt="Blog Post 3">
+            <div class="blog-post-content">
+                <h3 class="blog-post-title">Innovations in Medical Technology</h3>
+                <p class="blog-post-excerpt">Discover the latest advancements in wearable devices, telemedicine, and more.</p>
+                <a href="post3.html" class="read-more">Read More</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <a href="#">Previous</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Next</a>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Clinical Engineering Blog | Designed by Your Name</p>
+    </footer>
 </body>
 </html>
